@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 
-export const TeppanyakiFooter: React.FC = () => {
+export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-zinc-200 py-16 font-cormorant text-black">
       <div className="max-w-7xl mx-auto px-6">

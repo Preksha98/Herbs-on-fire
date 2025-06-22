@@ -1,20 +1,20 @@
 "use client";
 import * as React from "react";
-import { TeppanyakiNavigation } from "./TeppanyakiNavigation";
+import { Navigation } from "./TeppanyakiNavigation";
 import { TeppanyakiHero } from "./TeppanyakiHero";
 import { TeppanyakiFeatures } from "./TeppanyakiFeatures";
 import { TeppanyakiMenuCTA } from "./TeppanyakiMenuCTA";
-import { TeppanyakiFooter } from "./TeppanyakiFooter";
+import { Footer } from "./TeppanyakiFooter";
 
 const Teppanyaki: React.FC = () => {
   return (
     <main className="flex flex-col pt-2 bg-stone-200 max-md:pt-1">
       <div className="flex flex-col items-center w-full max-md:px-4 max-md:max-w-full space-y-6">
-        <TeppanyakiNavigation />
+        <Navigation />
         <TeppanyakiHero />
         <TeppanyakiFeatures />
               <TeppanyakiMenuCTA />
-      <TeppanyakiFooter />
+      <Footer />
       </div>
       
     </main>

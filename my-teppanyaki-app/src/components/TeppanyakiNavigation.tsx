@@ -1,7 +1,9 @@
 "use client";
 import * as React from "react";
+import { Link } from "react-router-dom";
 
-export const TeppanyakiNavigation: React.FC = () => {
+
+export const Navigation: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-stone-200 bg-opacity-95 backdrop-blur-sm shadow-md w-full">
       <nav className="flex items-center justify-between max-w-[1543px] mx-auto px-6 py-4 text-base text-black font-cinzel">
@@ -17,7 +19,9 @@ export const TeppanyakiNavigation: React.FC = () => {
           <div className="flex gap-8">
             <a href="#" className="hover:text-stone-600 transition-colors font-bold">Home</a>
             <a href="#" className="hover:text-stone-600 transition-colors font-bold">About</a>
-            <a href="#" className="hover:text-stone-600 transition-colors font-bold">Reservation</a>
+            <Link to="/reservation" className="hover:text-stone-600 transition-colors font-bold">
+                Reservation
+            </Link>
             <a href="#" className="hover:text-stone-600 transition-colors font-bold">Blog</a>
             <a href="#" className="hover:text-stone-600 transition-colors font-bold">Contact</a>
           </div>
@@ -30,6 +34,7 @@ export const TeppanyakiNavigation: React.FC = () => {
           />
         </div>
       </nav>
+     
     </header>
   );
 };

@@ -1,17 +1,17 @@
 import React from "react";
-import { TeppanyakiNavigation } from "./TeppanyakiNavigation";
+import { Navigation } from "./TeppanyakiNavigation";
 import { HeroSection } from "./HeroSection";
-import { TeppanyakiFooter } from "./TeppanyakiFooter";
+import { Footer } from "./TeppanyakiFooter";
 import { ReservationSection } from "./ReservationSection";
 
 const Reservation: React.FC = () => {
   return (
     <>
-      <TeppanyakiNavigation />
+      <Navigation />
       <div className="p-8">
         <h1 className="text-3xl font-bold">Make a Reservation</h1>
         <ReservationSection />
-              <TeppanyakiFooter />
+              <Footer />
       </div>
     </>
   );
